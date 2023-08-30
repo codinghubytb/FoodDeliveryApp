@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DeliveryApp.Views.HomePage"
+             Shell.NavBarIsVisible="False">
+
+    <ScrollView>
+
+        <StackLayout
+        Padding="20"
+        Spacing="20">
+
+        
+        <StackLayout
+                Orientation="Horizontal">
+
+                <ImageButton 
+                    BackgroundColor="#efefef"
+                    CornerRadius="10"
+                    Source="menu.svg" 
+                    WidthRequest="40"
+                    Clicked="ImageButton_Clicked"
+                    HeightRequest="40"
+                    />
+
+                <Label 
+                    Text="France,Tours" 
+                    VerticalTextAlignment="Center"
+                    HorizontalOptions="FillAndExpand"
+                    HorizontalTextAlignment="Center"/>
+
+                <ImageButton 
+                    Source="user.svg" 
+                    WidthRequest="40"
+                    HeightRequest="40"
+                    />
+            </StackLayout>
+        
+        <Frame 
+            BackgroundColor="{StaticResource Beige}">
+
+            <Grid ColumnDefinitions="*, *">
+                <StackLayout
+                    Spacing="10">
+                    
+                    <Label
+                        Text="The Fastest"
+                        FontSize="Large"
+                        FontAttributes="Bold"/>
+                    <Label
+                        HorizontalOptions="FillAndExpand"
+                        Text="Delivery Food"
+                        TextColor="{StaticResource Red}"
+                        FontSize="Large"
+                        FontAttributes="Bold"/>
+                    <Button Text="Order Now" 
+                            HorizontalOptions="StartAndExpand"/>
+                </StackLayout>
+                <Image 
+                    WidthRequest="128"
+                    HeightRequest="128"
+                    Grid.Column="1"
+                    Source="delivery.png"/>
+            </Grid>
+            
+        </Frame>
+
+        <Label Text="Catégories" 
+               FontSize="Large"
+               FontAttributes="Bold"/>
+
+        <ScrollView
+            Orientation="Horizontal"
+            HorizontalScrollBarVisibility="Never">
+
+            <HorizontalStackLayout
+                Spacing="20">
+
+
+                <Frame
+                    Padding="15,5"
+                    BorderColor="{StaticResource Red}">
+                    <StackLayout
+                        Orientation="Horizontal"
+                        Spacing="10">
+                        <ImageButton
+                        Source="https://static.vecteezy.com/system/resources/previews/018/931/024/original/cartoon-cheeseburger-icon-png.png"
+                        WidthRequest="40"
+                        HeightRequest="40"
+                        />
+                        <Label Text="Burger" 
+                               VerticalOptions="CenterAndExpand"
+                            VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame
+                    Padding="15,5">
+                    <StackLayout
+                        Orientation="Horizontal"
+                        Spacing="10">
+                        <ImageButton
+                        Source="https://cdn-icons-png.flaticon.com/512/6978/6978255.png"
+                        WidthRequest="40"
+                        HeightRequest="40"
+                        />
+                        <Label Text="Pizza" 
+                               VerticalOptions="CenterAndExpand"
+                            VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+                
+                <Frame
+                    Padding="15,5">
+                    <StackLayout
+                        Orientation="Horizontal"
+                        Spacing="10">
+                        <ImageButton
+                        Source="https://static.vecteezy.com/system/resources/previews/009/636/705/original/kebab-skewer-3d-illustration-icon-png.png"
+                        WidthRequest="40"
+                        HeightRequest="40"
+                        />
+                        <Label Text="Kebab" 
+                               VerticalOptions="CenterAndExpand"
+                            VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+                
+            </HorizontalStackLayout>
+
+        </ScrollView>
+
+        <StackLayout
+            Orientation="Horizontal">
+
+            <Label Text="Populaire Maintenant" 
+               FontSize="Large"
+               FontAttributes="Bold"
+                   HorizontalOptions="FillAndExpand"/>
+
+            <Label Text="Voir Tout"
+                   VerticalTextAlignment="Center"
+                   TextColor="{StaticResource Gold}"
+                   FontAttributes="Bold"/>
+        </StackLayout>
+
+
+            <ScrollView
+                Orientation="Horizontal"
+                HorizontalScrollBarVisibility="Never">
+                <StackLayout
+                    Spacing="20"
+                    Orientation="Horizontal">
+
+                    <Frame
+            WidthRequest="200"
+            Padding="0"
+                        CornerRadius="20"
+            BorderColor="LightGray">
+                        <Grid RowDefinitions="150,Auto,Auto,Auto"
+                  RowSpacing="10">
+
+                            <Image 
+                    Aspect="AspectFill"
+                    Source="burgerimage.png"/>
+
+                            <Label 
+                        Grid.Row="1"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        HorizontalTextAlignment="Center"
+                        Text="Fish Burger" />
+                            <Label 
+                        Grid.Row="2"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Cheesy Fish" />
+                            <Label 
+                        Grid.Row="3"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="10.99 $" />
+
+                        </Grid>
+                    </Frame>
+
+                    <Frame
+            WidthRequest="200"
+            Padding="0"
+                        CornerRadius="20">
+                        <Grid RowDefinitions="150,Auto,Auto,Auto"
+                  RowSpacing="10">
+
+                            <Image 
+                    Aspect="AspectFill"
+                    Source="burgerimage.png"/>
+
+                            <Label 
+                        Grid.Row="1"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        HorizontalTextAlignment="Center"
+                        Text="Fish Burger" />
+                            <Label 
+                        Grid.Row="2"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Cheesy Fish" />
+                            <Label 
+                        Grid.Row="3"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="10.99 $" />
+
+                        </Grid>
+                    </Frame>
+
+                    <Frame
+            WidthRequest="200"
+            Padding="0"
+                        CornerRadius="20">
+                        <Grid RowDefinitions="150,Auto,Auto,Auto"
+                  RowSpacing="10">
+
+                            <Image 
+                    Aspect="AspectFill"
+                    Source="burgerimage.png"/>
+
+                            <Label 
+                        Grid.Row="1"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        HorizontalTextAlignment="Center"
+                        Text="Fish Burger" />
+                            <Label 
+                        Grid.Row="2"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Cheesy Fish" />
+                            <Label 
+                        Grid.Row="3"
+                        FontSize="Large"
+                        FontAttributes="Bold"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="10.99 $" />
+
+                        </Grid>
+                    </Frame>
+                    
+                </StackLayout>
+            </ScrollView>
+            
+
+    </StackLayout>
+
+    </ScrollView>
+</ContentPage>
